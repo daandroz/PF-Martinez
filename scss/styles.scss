@@ -771,7 +771,7 @@ nav{
 
 .keycaps-badge{
     color: black;
-    background-color: #FF6701;
+    background-color: $keycaps-badge-color;
     padding: 7px 20px;
     border-radius: 15px;
     border: 0;
@@ -782,7 +782,7 @@ nav{
 
 .module-badge{
     color: whitesmoke;
-    background-color: #444444;
+    background-color: $module-badge-color;
     padding: 7px 20px;
     border-radius: 15px;
     border: 0;
@@ -793,7 +793,7 @@ nav{
 
 .collabo-badge{
     color: whitesmoke;
-    background-color: #5451FF;
+    background-color: $collabo-badge-color;
     padding: 7px 20px;
     border-radius: 15px;
     border: 0;
@@ -804,7 +804,7 @@ nav{
 
 .merch-badge{
     color: black;
-    background-color: #E77FFF;
+    background-color: $merch-badge-color;
     padding: 7px 20px;
     border-radius: 15px;
     border: 0;
@@ -815,7 +815,7 @@ nav{
 
 .deskmat-badge{
     color: black;
-    background-color: #ECFE00;
+    background-color: $deskmat-badge-color;
     padding: 7px 20px;
     border-radius: 15px;
     border: 0;
