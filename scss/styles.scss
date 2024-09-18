@@ -596,7 +596,7 @@ nav{
 }
 
 .question{
-    width: 100%;
+    width: 99%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -637,6 +637,10 @@ nav{
 .accordion-item{
     display: flex;
     justify-content: space-between;
+}
+
+.accordion-button{
+    background-image: url('../media/faq-plus-icon.svg');
 }
 
 @media (max-width: 430px) {
