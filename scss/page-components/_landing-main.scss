@@ -166,7 +166,7 @@
 .main-product-variants{
     img{
         height: 100%;
-        margin-left:70px;
+        margin: auto;
     
     }
 }
@@ -252,7 +252,7 @@
     outline: solid var(--outline-color) 1px;
 }
 
-@media (max-width:430px) {
+@media (max-width:768px) {
 
 
     .nav-bar-btns{
