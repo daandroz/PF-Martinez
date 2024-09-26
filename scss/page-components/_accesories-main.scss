@@ -70,11 +70,17 @@
     border-radius: 10px;
 }
 
+@mixin d-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
 .accesories-container-card-type2{
     outline: solid whitesmoke 2px;
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
+    @include d-flex-column;
     width: 26%;
     margin: 20px;
 }
