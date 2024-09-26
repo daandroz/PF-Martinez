@@ -1,0 +1,89 @@
+/* Secondary products styles start */
+
+.secondary-products-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: whitesmoke;
+    outline: solid var(--outline-color) 1px;
+    margin-top: 10px;
+    padding: 10px 0px;
+}
+
+.secondary-product-card{
+
+    width: 48%;
+    outline: solid var(--outline-color) 2px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.product-name{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.product-name{
+    img{
+        margin-right: 5px;
+    }
+}
+
+.product-img-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-img{
+    height: 300px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.product-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.carousel-container{
+    width: 55%;
+    margin: auto;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .secondary-product-card {
+        width: 100%;
+    }
+
+    .product-img{
+        height: 150px;
+    }
+
+    .product-name{
+        font-size: 1rem;
+    }
+
+    .descriptors-container{
+        font-size: 0.8rem;
+    }
+
+    .carousel-container{
+        width: 100%;
+    }
+
+
+}
+
+/* Secondary products styles end */

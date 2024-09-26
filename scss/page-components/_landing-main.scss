@@ -1,0 +1,347 @@
+.main-viewport-container{
+    height: 80vh;
+    background-color: black;
+}
+
+.main-viewport-container{
+    color: whitesmoke;
+    display: grid;
+    grid-template-rows: repeat(15,1fr);
+}
+
+.landing-title-container{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.landing-title{
+    text-align: left;
+}
+
+.title-container{
+
+    grid-row-start: 1;
+    grid-row-end:2;
+    grid-column-start: 1;
+    grid-column-end:3;
+}
+
+.spline-keyb-container{
+    grid-row-start: 1;
+    grid-row-end:16;
+    grid-column-start: 1;
+    grid-column-end:11;
+}
+
+.top-right-container{
+    grid-row-start: 1;
+    grid-row-end:6;
+    grid-column-start: 8;
+    grid-column-end:11;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size:  6rem;
+    color: whitesmoke;
+    mix-blend-mode: difference;
+}
+
+.bottom-left-container{
+    grid-row-start: 10;
+    grid-row-end:16;
+    grid-column-start: 1;
+    grid-column-end:5;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 6rem;
+    color: whitesmoke;
+    mix-blend-mode: difference;
+}
+
+.orange-accent-text, .actual-page{
+    color: var(--orange-accent);
+}
+
+.marquee{
+    color: whitesmoke;
+    background-color: var(--main-color);
+    display: inline-block;
+    white-space: nowrap; /* Prevents the text from wrapping */
+    position: absolute; /* Required for scrolling effect */
+    animation: marquee 60s linear infinite; /* Applies the animation */
+    padding: 15px;
+    outline: solid var(--outline-color) 1px;
+}
+
+.main-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.main-product-container{
+    display: grid;
+    grid-template-rows: repeat(9,9vh) ;
+    grid-template-columns: repeat(10,9vw) ;
+    grid-row-gap: 1vh;
+    grid-column-gap: 1.5vh;
+    background-color: var(--main-color);
+    margin: 30px 0px;
+}
+
+.main-product-image{
+    grid-row-start: 1;
+    grid-row-end:10;
+    grid-column-start: 1;
+    grid-column-end:5 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    outline: solid var(--outline-color) 1px;
+    color: whitesmoke;
+}
+
+.main-product-description{
+    grid-row-start: 1;
+    grid-row-end:6;
+    grid-column-start: 5;
+    grid-column-end:11 ;
+    background-color: black;
+    border-radius: 10px;
+    outline: solid var(--orange-accent) 1px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--main-color);
+    background-color: var(--orange-accent);
+}
+
+.main-product-variants{
+    grid-row-start: 6;
+    grid-row-end:10;
+    grid-column-start: 5;
+    grid-column-end:9 ;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    outline: solid var(--outline-color) 1px;
+    color: whitesmoke;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.to-lowercase{
+    text-transform: lowercase;
+}
+
+.main-product-feature{
+    grid-row-start: 6;
+    grid-row-end:10;
+    grid-column-start: 9;
+    grid-column-end:11 ;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    outline: solid var(--outline-color) 1px;
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+.main-product-feature{
+    img{
+        height: 100%;
+    }
+}
+
+.main-product-variants{
+    img{
+        height: 100%;
+        margin-left:80px;
+    
+    }
+}
+
+.keyb-desc-container{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.keyboard-class{
+    margin: 15px;
+}
+
+.keyb-desc-container{
+    p{
+        margin: 15px;
+    }
+}
+
+#price-tag{
+    margin: 15px 15px 30px;
+}
+
+.keyboard-class{
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: medium;
+    color: whitesmoke;
+    background-color: var(--main-color);
+}
+
+.keyb-desc-container{
+    p{
+        span{
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.keyb-desc-container-2{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    margin-bottom: 60px;
+}
+
+.keyb-desc-container-2{
+    p{
+        font-size: 1.2rem;
+    }
+}
+
+.bold-text-class{
+    font-weight: bold;
+}
+
+.hollow-button{
+    color: var(--main-color);
+    background-color: var(--main-color);
+    outline: solid var(--main-color) 2px;
+    border-radius: 10px;
+    border: 0;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.dropdown-center{
+    display: none;
+}
+
+.dropdown-toggle{
+    color: whitesmoke;
+}
+
+.dropdown-toggle.show{
+    outline: none;
+}
+
+.dropdown-menu-dark{
+    background-color: black;
+    color: whitesmoke;
+    outline: solid var(--outline-color) 1px;
+}
+
+@media (max-width:430px) {
+
+
+    .nav-bar-btns{
+        display: none;
+    }
+
+    .dropdown-center{
+        display: block;
+    }
+
+    .landing-title-container{
+        padding: 0;
+    }
+
+    .landing-title{
+        font-size: 1rem;
+    }
+
+    .main-viewport-container{
+        grid-template-columns: 3fr;
+        height: 74vh;
+    }
+
+    .top-right-container{
+        font-size: 2rem;
+        grid-row-end: 3;
+    }
+
+    .bottom-left-container{
+        font-size: 2rem;
+        grid-row-start: 13;
+        align-items: flex-start;
+    }
+
+    .main-product-container{
+        grid-template-columns: 1fr;
+        grid-row-gap: 0;
+        grid-column-gap: 0;
+        margin: 0;
+
+    }
+
+    .main-product-image{
+        display: none;
+    }
+
+    .main-product-feature{
+        display: none;
+    }
+
+    .main-product-description{
+        margin: 10px;
+    }
+
+    .main-product-variants{
+        grid-column-end: 11;
+        margin: 0px 10px 10px 10px;
+        width: auto;
+    }
+
+    .keyboard-class,p{
+
+        margin: 5px;
+    }
+
+    .keyb-desc-container-2{
+        margin: 20px 21px;
+    }
+
+
+    .keyb-desc-container{
+        p{
+            span{
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    
+    .keyb-desc-container-2{
+        p{
+            font-size: 1rem;
+        }
+    }
+
+    .hollow-button{
+        margin-right: 0;
+    }
+
+}
+
+/* index styles end */

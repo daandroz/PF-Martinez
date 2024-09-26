@@ -1,0 +1,25 @@
+/* css reset*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,p{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background-color: black;
+}
+
+/* esconder botón spline viewer */
+
+spline-viewer{
+    visibility: hidden;
+}
+
+/* esconder botón spline viewer */

@@ -1,0 +1,150 @@
+/* footer styles start */
+
+.main-logo-footer{
+    text-align: center;
+    background-color: black;
+    border: solid whitesmoke 1px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+video{
+    height: 300px;
+    margin: 20px;
+}
+
+.bmth{
+    height: 300px;
+}
+
+.legal-info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+}
+
+
+
+.brand-name-plain{
+    color: whitesmoke;
+}
+
+footer{
+    ul{
+        li{
+            a{
+                &:hover{
+                    color: var(--orange-accent);
+                }
+            }
+        }
+    }
+}
+
+button{
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.discord-btn, .explore-btn-2{
+    color: whitesmoke;
+    background-color: black;
+    outline: solid whitesmoke 1px;
+    border-radius: 10px;
+}
+
+.updates-btn, .explore-btn-1{
+    color: black;
+    background-color: var(--orange-accent);
+    border-radius: 10px;
+}
+
+.custom-btn{
+    background-color: var(--orange-accent);
+    outline: solid black;
+}
+
+.custom-btn:hover{
+    background-color: var(--orange-accent-light)
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: black;
+    outline: solid whitesmoke 1px;
+    padding: 15px;
+}
+
+.marquee-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 300s linear infinite;
+    color: whitesmoke; /* whitesmoke text */
+
+}
+
+.marquee-content2{
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee2 70s linear infinite;
+    color: whitesmoke; /* whitesmoke text */
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee2 {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width:430px) {
+
+    .brand-name-plain{
+        text-align: center;
+    }
+    .legal-info-container{display: block;}
+
+    .legal-links{
+        margin: 25px 0;
+    }
+
+    .button-container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .btn{
+        margin: 5px 0;
+    }
+    video{
+        height: 150px;
+    }
+
+
+}
+
+/* footer styles end */
