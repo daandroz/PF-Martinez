@@ -738,9 +738,9 @@ button {
   margin: 20px;
 }
 
-.keyboard-badge {
-  color: rgb(0, 0, 0);
-  background-color: var(--keyboard-badge-color);
+/* mixin paras las badges */
+/* extend para badges */
+.badge-style, .deskmat-badge, .merch-badge, .collabo-badge, .module-badge, .keycaps-badge {
   padding: 7px 20px;
   border-radius: 15px;
   border: 0;
@@ -750,58 +750,28 @@ button {
 }
 
 .keycaps-badge {
-  color: black;
   background-color: var(--keycaps-badge-color);
-  padding: 7px 20px;
-  border-radius: 15px;
-  border: 0;
-  font-weight: bold;
-  margin-top: 15px;
-  margin-left: 20px;
+  color: black;
 }
 
 .module-badge {
-  color: whitesmoke;
   background-color: var(--module-badge-color);
-  padding: 7px 20px;
-  border-radius: 15px;
-  border: 0;
-  font-weight: bold;
-  margin-top: 15px;
-  margin-left: 20px;
+  color: whitesmoke;
 }
 
 .collabo-badge {
-  color: whitesmoke;
   background-color: var(--collabo-badge-color);
-  padding: 7px 20px;
-  border-radius: 15px;
-  border: 0;
-  font-weight: bold;
-  margin-top: 15px;
-  margin-left: 20px;
+  color: whitesmoke;
 }
 
 .merch-badge {
-  color: black;
   background-color: var(--merch-badge-color);
-  padding: 7px 20px;
-  border-radius: 15px;
-  border: 0;
-  font-weight: bold;
-  margin-top: 15px;
-  margin-left: 20px;
+  color: black;
 }
 
 .deskmat-badge {
-  color: black;
   background-color: var(--deskmat-badge-color);
-  padding: 7px 20px;
-  border-radius: 15px;
-  border: 0;
-  font-weight: bold;
-  margin-top: 15px;
-  margin-left: 20px;
+  color: black;
 }
 
 .accesory-name p {

@@ -97,11 +97,16 @@
     margin: 20px;
 }
 
+/* mixin paras las badges */
 
+@mixin badge-color($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+  }
 
-.keyboard-badge{
-    color: rgb(0, 0, 0);
-    background-color: var(--keyboard-badge-color);
+/* extend para badges */
+
+.badge-style{
     padding: 7px 20px;
     border-radius: 15px;
     border: 0;
@@ -110,59 +115,37 @@
     margin-left: 20px;
 }
 
+
+
+
 .keycaps-badge{
-    color: black;
-    background-color: var(--keycaps-badge-color);
-    padding: 7px 20px;
-    border-radius: 15px;
-    border: 0;
-    font-weight: bold;
-    margin-top: 15px;
-    margin-left: 20px;
+    @include badge-color(var(--keycaps-badge-color), black);
+    @extend .badge-style;
+    
 }
 
 .module-badge{
-    color: whitesmoke;
-    background-color: var(--module-badge-color);
-    padding: 7px 20px;
-    border-radius: 15px;
-    border: 0;
-    font-weight: bold;
-    margin-top: 15px;
-    margin-left: 20px;
+    @include badge-color(var(--module-badge-color), whitesmoke);
+    @extend .badge-style;
+
 }
 
 .collabo-badge{
-    color: whitesmoke;
-    background-color: var(--collabo-badge-color);
-    padding: 7px 20px;
-    border-radius: 15px;
-    border: 0;
-    font-weight: bold;
-    margin-top: 15px;
-    margin-left: 20px;
+    @include badge-color(var(--collabo-badge-color), whitesmoke);
+    @extend .badge-style;
+
 }
 
 .merch-badge{
-    color: black;
-    background-color: var(--merch-badge-color);
-    padding: 7px 20px;
-    border-radius: 15px;
-    border: 0;
-    font-weight: bold;
-    margin-top: 15px;
-    margin-left: 20px;
+    @include badge-color(var(--merch-badge-color), black);
+    @extend .badge-style;
+
 }
 
 .deskmat-badge{
-    color: black;
-    background-color: var(--deskmat-badge-color);
-    padding: 7px 20px;
-    border-radius: 15px;
-    border: 0;
-    font-weight: bold;
-    margin-top: 15px;
-    margin-left: 20px;
+    @include badge-color(var(--deskmat-badge-color), black);
+    @extend .badge-style;
+
 }
 
 .accesory-name{
