@@ -547,6 +547,8 @@ button {
     grid-column-end: 11;
     margin: 0px 10px 10px 10px;
     width: auto;
+    display: flex;
+    justify-content: center;
   }
   .keyboard-class, p {
     margin: 5px;
