@@ -598,17 +598,21 @@ button {
 }
 
 .product-name img {
+  height: 24px;
+  width: 24px;
   margin-right: 5px;
 }
 
 .product-img-container {
+  height: 300px;
+  width: 270px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 
 .product-img {
-  height: 300px;
   border-radius: 10px;
   margin: 10px;
 }
