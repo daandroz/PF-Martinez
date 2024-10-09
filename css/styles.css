@@ -636,9 +636,6 @@ button {
   .secondary-product-card {
     width: 100%;
   }
-  .product-img {
-    height: 150px;
-  }
   .product-name {
     font-size: 1rem;
   }
