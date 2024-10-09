@@ -615,6 +615,7 @@ button {
 .product-img {
   border-radius: 10px;
   margin: 10px;
+  background-color: #D7D7D7;
 }
 
 .product-desc {
