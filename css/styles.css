@@ -542,6 +542,7 @@ button {
   }
   .main-product-description {
     margin: 10px;
+    justify-content: space-evenly;
   }
   .main-product-variants {
     grid-column-end: 11;
@@ -554,10 +555,13 @@ button {
     margin: 5px;
   }
   .keyb-desc-container-2 {
-    margin: 20px 21px;
+    margin: 0 21px;
   }
   .keyb-desc-container p span {
     font-size: 1.8rem;
+  }
+  .keyb-desc-container p {
+    margin: 0 15px;
   }
   .keyb-desc-container-2 p {
     font-size: 1rem;
